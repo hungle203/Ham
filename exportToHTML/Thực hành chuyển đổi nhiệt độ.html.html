@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Thực hành chuyển đổi nhiệt độ.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bbbbbb;}
+.s1 { color: #d19a66; font-style: italic;}
+.s2 { color: #ef596f;}
+.s3 { color: #89ca78;}
+.s4 { color: #d55fde; font-style: italic;}
+.s5 { color: #d19a66;}
+</style>
+</head>
+<body bgcolor="#282c34">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Thực hành chuyển đổi nhiệt độ.html</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;!DOCTYPE </span><span class="s1">html</span><span class="s0">&gt;</span>
+<span class="s0">&lt;</span><span class="s2">html </span><span class="s1">lang</span><span class="s3">=&quot;en&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;</span><span class="s2">head</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;</span><span class="s2">meta </span><span class="s1">charset</span><span class="s3">=&quot;UTF-8&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;</span><span class="s2">title</span><span class="s0">&gt;Title&lt;/</span><span class="s2">title</span><span class="s0">&gt;</span>
+<span class="s0">&lt;/</span><span class="s2">head</span><span class="s0">&gt;</span>
+<span class="s0">&lt;</span><span class="s2">form</span><span class="s0">&gt;</span>
+<span class="s0">&lt;</span><span class="s2">p</span><span class="s0">&gt;</span>
+<span class="s0">&lt;</span><span class="s2">label</span><span class="s0">&gt;Fahrenheit&lt;/</span><span class="s2">label</span><span class="s0">&gt;</span>
+<span class="s0">&lt;</span><span class="s2">input </span><span class="s1">id</span><span class="s3">=&quot;inputFahrenheit&quot; </span><span class="s1">type</span><span class="s3">=&quot;number&quot; </span><span class="s1">placeholder</span><span class="s3">=&quot;Fahrenhiet&quot;</span>
+        <span class="s1">oninput</span><span class="s3">=&quot;</span><span class="s0">temperatureConverter(</span><span class="s4">this</span><span class="s0">.value)</span><span class="s3">&quot;</span>
+        <span class="s1">onchange</span><span class="s3">=&quot;</span><span class="s0">temperatureConverter(</span><span class="s4">this</span><span class="s0">.value)</span><span class="s3">&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+<span class="s0">&lt;</span><span class="s2">p</span><span class="s0">&gt;Celsius: &lt;</span><span class="s2">span </span><span class="s1">id</span><span class="s3">=&quot;outputCelsius&quot;</span><span class="s0">&gt;&lt;/</span><span class="s2">span</span><span class="s0">&gt;&lt;/</span><span class="s2">p</span><span class="s0">&gt;</span>
+<span class="s0">&lt;/</span><span class="s2">form</span><span class="s0">&gt;</span>
+<span class="s0">&lt;</span><span class="s2">script</span><span class="s0">&gt;</span>
+    <span class="s4">function </span><span class="s0">temperatureConverter(valNum) {</span>
+        <span class="s0">valNum = parseFloat(valNum);</span>
+        <span class="s0">document.getElementById(</span><span class="s3">&quot;outputCelsius&quot;</span><span class="s0">).innerHTML = (valNum-</span><span class="s5">32</span><span class="s0">) /</span><span class="s5">1.8</span>
+    <span class="s0">}</span>
+<span class="s0">&lt;/</span><span class="s2">script</span><span class="s0">&gt;</span>
+<span class="s0">&lt;/</span><span class="s2">body</span><span class="s0">&gt;</span>
+<span class="s0">&lt;/</span><span class="s2">html</span><span class="s0">&gt;</span></pre>
+</body>
+</html>
